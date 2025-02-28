@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="glitch" data-text="WELCOME">WELCOME</div>
+    
+    <div class="hidden-message">They are watching. Look deeper...</div>
+    
+    <button id="aiTrigger">Ask the Entity</button>
+    
+    <div id="aiResponse"></div>
+
+    <audio id="creepyAudio" src="https://freesound.org/data/previews/566/566248_10388030-lq.mp3" loop></audio>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(() => {
+                document.getElementById("creepyAudio").play();
+            }, 3000); 
+        });
+    </script>
+</body>
+</html>

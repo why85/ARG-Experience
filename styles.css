@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+body {
+    background: black;
+    color: red;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.glitch {
+    font-size: 4rem;
+    position: relative;
+    animation: glitch 1s infinite alternate;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 5px 5px 0px red; }
+    100% { text-shadow: -5px -5px 0px cyan; }
+}
+
+.hidden-message {
+    margin-top: 50px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.hidden-message:hover {
+    opacity: 1;
+    color: white;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: red;
+    border: none;
+    color: white;
+}
+
+button:hover {
+    background: darkred;
+}
